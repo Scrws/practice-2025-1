@@ -1,0 +1,79 @@
+baseURL = 'https://example.org/'
+languageCode = 'ru'
+title = 'проект политех'
+theme = "ananke"
+
+
+[params]
+  dateform        = "May 17, 2025"
+  dateformShort   = "May 17"
+  dateformNum     = "2025-05-17"
+  dateformNumTime = "2025-05-17 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "Сайт проекта по созданию 3D симулятора"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+  
+  # Show a global language switcher in the navigation bar
+  enableGlobalLanguageMenu = false
+
+  # Metadata mostly used in document's head
+  description = "My new homepage or blog"
+  keywords = "homepage, blog"
+  images = [""]
+
+[taxonomies]
+    category = "blog"
+    tag      = "tag"
+    series   = "series"
+   
+
+[languages]
+  [languages.en]
+    title = "Практика"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+  [languages.en.params]
+    subtitle  = "A simple theme for Hugo"
+
+    [languages.en.params.logo]
+      logoText = "Практика"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+  # And you can even create generic menu
+
+[[menu.main]]
+    identifier = "цели и задачи"
+    name       = "Цели и задачи"
+    url        = "/цели и задачи"
+[[menu.main]]
+    identifier = "участники"
+    name       = "Участники"
+    url        = "/участники"
+[[menu.main]]
+    identifier = "ресурсы"
+    name       = "Ресурсы"
+    url        = "/ресурсы"
+[[menu.main]]
+    identifier = "журнал"
+    name       = "Журнал"
+    url        = "/журнал"
+[[menu.main]]
+    identifier = "о нас"
+    name       = "О нас"
+    url        = "/page"
+[[menu.main]]
+    identifier = "техническое руководство"
+    name       = "Тех. руководство"
+    url        = "тр"
